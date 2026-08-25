@@ -1,0 +1,20 @@
+{
+  "name": "pocketai-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "PocketAI monorepo — backend-agnostic React Native AI integration SDK",
+  "workspaces": [
+    "packages/*",
+    "example"
+  ],
+  "scripts": {
+    "build": "npm run build -w @pocketai/sdk",
+    "typecheck": "npm run typecheck -w @pocketai/sdk",
+    "test": "npm run test -w @pocketai/sdk",
+    "test:watch": "npm run test:watch -w @pocketai/sdk"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}
