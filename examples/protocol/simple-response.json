@@ -1,0 +1,42 @@
+[
+  {
+    "type": "message_start",
+    "eventId": "evt_001",
+    "conversationId": "conv_simple",
+    "requestId": "req_simple_001",
+    "messageId": "msg_assistant_001",
+    "timestamp": "2026-09-10T00:00:00.000Z",
+    "protocolVersion": "v1",
+    "role": "assistant"
+  },
+  {
+    "type": "text_delta",
+    "eventId": "evt_002",
+    "conversationId": "conv_simple",
+    "requestId": "req_simple_001",
+    "messageId": "msg_assistant_001",
+    "timestamp": "2026-09-10T00:00:00.050Z",
+    "protocolVersion": "v1",
+    "delta": "Hello! "
+  },
+  {
+    "type": "text_delta",
+    "eventId": "evt_003",
+    "conversationId": "conv_simple",
+    "requestId": "req_simple_001",
+    "messageId": "msg_assistant_001",
+    "timestamp": "2026-09-10T00:00:00.100Z",
+    "protocolVersion": "v1",
+    "delta": "How can I help you today?"
+  },
+  {
+    "type": "message_complete",
+    "eventId": "evt_004",
+    "conversationId": "conv_simple",
+    "requestId": "req_simple_001",
+    "messageId": "msg_assistant_001",
+    "timestamp": "2026-09-10T00:00:00.150Z",
+    "protocolVersion": "v1",
+    "finishReason": "stop"
+  }
+]

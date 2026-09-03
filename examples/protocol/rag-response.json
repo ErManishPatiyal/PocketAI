@@ -1,0 +1,85 @@
+[
+  {
+    "type": "message_start",
+    "eventId": "evt_101",
+    "conversationId": "conv_rag",
+    "requestId": "req_rag_001",
+    "messageId": "msg_assistant_101",
+    "timestamp": "2026-09-10T00:01:00.000Z",
+    "protocolVersion": "v1",
+    "role": "assistant"
+  },
+  {
+    "type": "thinking_start",
+    "eventId": "evt_102",
+    "conversationId": "conv_rag",
+    "requestId": "req_rag_001",
+    "messageId": "msg_assistant_101",
+    "timestamp": "2026-09-10T00:01:00.020Z",
+    "protocolVersion": "v1",
+    "activityId": "act_search_01",
+    "activityType": "searching_knowledge",
+    "text": "Searching knowledge"
+  },
+  {
+    "type": "source",
+    "eventId": "evt_103",
+    "conversationId": "conv_rag",
+    "requestId": "req_rag_001",
+    "timestamp": "2026-09-10T00:01:00.080Z",
+    "protocolVersion": "v1",
+    "sourceId": "src_policy_42",
+    "title": "Employee Leave Policy",
+    "documentType": "pdf",
+    "origin": "knowledge_base",
+    "url": "https://example.com/docs/leave-policy",
+    "excerpt": "Employees may take up to 20 days of paid leave per year."
+  },
+  {
+    "type": "citation",
+    "eventId": "evt_104",
+    "conversationId": "conv_rag",
+    "requestId": "req_rag_001",
+    "messageId": "msg_assistant_101",
+    "timestamp": "2026-09-10T00:01:00.100Z",
+    "protocolVersion": "v1",
+    "citationId": "cit_01",
+    "sourceId": "src_policy_42",
+    "marker": "[1]",
+    "startOffset": 48,
+    "endOffset": 51,
+    "text": "20 days"
+  },
+  {
+    "type": "thinking_complete",
+    "eventId": "evt_105",
+    "conversationId": "conv_rag",
+    "requestId": "req_rag_001",
+    "messageId": "msg_assistant_101",
+    "timestamp": "2026-09-10T00:01:00.120Z",
+    "protocolVersion": "v1",
+    "activityId": "act_search_01",
+    "activityType": "searching_knowledge",
+    "text": "Retrieved relevant policy documents"
+  },
+  {
+    "type": "text_delta",
+    "eventId": "evt_106",
+    "conversationId": "conv_rag",
+    "requestId": "req_rag_001",
+    "messageId": "msg_assistant_101",
+    "timestamp": "2026-09-10T00:01:00.150Z",
+    "protocolVersion": "v1",
+    "delta": "According to the leave policy, employees may take up to 20 days [1] of paid leave per year."
+  },
+  {
+    "type": "message_complete",
+    "eventId": "evt_107",
+    "conversationId": "conv_rag",
+    "requestId": "req_rag_001",
+    "messageId": "msg_assistant_101",
+    "timestamp": "2026-09-10T00:01:00.200Z",
+    "protocolVersion": "v1",
+    "finishReason": "stop"
+  }
+]

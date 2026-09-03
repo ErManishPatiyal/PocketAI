@@ -1,0 +1,27 @@
+[
+  {
+    "type": "message_start",
+    "eventId": "evt_301",
+    "conversationId": "conv_error",
+    "requestId": "req_error_001",
+    "messageId": "msg_assistant_301",
+    "timestamp": "2026-09-10T00:03:00.000Z",
+    "protocolVersion": "v1",
+    "role": "assistant"
+  },
+  {
+    "type": "error",
+    "eventId": "evt_302",
+    "conversationId": "conv_error",
+    "requestId": "req_error_001",
+    "messageId": "msg_assistant_301",
+    "timestamp": "2026-09-10T00:03:00.050Z",
+    "protocolVersion": "v1",
+    "code": "UPSTREAM_TIMEOUT",
+    "message": "The AI backend did not respond in time.",
+    "retryable": true,
+    "details": {
+      "timeoutMs": 30000
+    }
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "type": "message_start",
+    "eventId": "evt_201",
+    "conversationId": "conv_agent",
+    "requestId": "req_agent_001",
+    "messageId": "msg_assistant_201",
+    "timestamp": "2026-09-10T00:02:00.000Z",
+    "protocolVersion": "v1",
+    "role": "assistant"
+  },
+  {
+    "type": "thinking_start",
+    "eventId": "evt_202",
+    "conversationId": "conv_agent",
+    "requestId": "req_agent_001",
+    "messageId": "msg_assistant_201",
+    "timestamp": "2026-09-10T00:02:00.010Z",
+    "protocolVersion": "v1",
+    "activityId": "act_understand_01",
+    "activityType": "understanding_request",
+    "text": "Understanding the request"
+  },
+  {
+    "type": "thinking_complete",
+    "eventId": "evt_203",
+    "conversationId": "conv_agent",
+    "requestId": "req_agent_001",
+    "messageId": "msg_assistant_201",
+    "timestamp": "2026-09-10T00:02:00.030Z",
+    "protocolVersion": "v1",
+    "activityId": "act_understand_01",
+    "activityType": "understanding_request"
+  },
+  {
+    "type": "tool_call_start",
+    "eventId": "evt_204",
+    "conversationId": "conv_agent",
+    "requestId": "req_agent_001",
+    "messageId": "msg_assistant_201",
+    "timestamp": "2026-09-10T00:02:00.040Z",
+    "protocolVersion": "v1",
+    "toolCallId": "tool_calendar_01",
+    "name": "lookup_calendar",
+    "label": "Checking calendar"
+  },
+  {
+    "type": "tool_call_update",
+    "eventId": "evt_205",
+    "conversationId": "conv_agent",
+    "requestId": "req_agent_001",
+    "messageId": "msg_assistant_201",
+    "timestamp": "2026-09-10T00:02:00.080Z",
+    "protocolVersion": "v1",
+    "toolCallId": "tool_calendar_01",
+    "status": "running",
+    "progress": 0.5,
+    "message": "Querying availability"
+  },
+  {
+    "type": "tool_call_complete",
+    "eventId": "evt_206",
+    "conversationId": "conv_agent",
+    "requestId": "req_agent_001",
+    "messageId": "msg_assistant_201",
+    "timestamp": "2026-09-10T00:02:00.120Z",
+    "protocolVersion": "v1",
+    "toolCallId": "tool_calendar_01",
+    "status": "completed",
+    "result": {
+      "availableSlots": 3
+    }
+  },
+  {
+    "type": "text_delta",
+    "eventId": "evt_207",
+    "conversationId": "conv_agent",
+    "requestId": "req_agent_001",
+    "messageId": "msg_assistant_201",
+    "timestamp": "2026-09-10T00:02:00.150Z",
+    "protocolVersion": "v1",
+    "delta": "I found 3 open slots on your calendar this week."
+  },
+  {
+    "type": "message_complete",
+    "eventId": "evt_208",
+    "conversationId": "conv_agent",
+    "requestId": "req_agent_001",
+    "messageId": "msg_assistant_201",
+    "timestamp": "2026-09-10T00:02:00.200Z",
+    "protocolVersion": "v1",
+    "finishReason": "stop"
+  }
+]
